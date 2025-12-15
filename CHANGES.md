@@ -1,5 +1,9 @@
 # Release Notes
 
+## 7.0.1 (2025-12-15)
+
+* add python 3.14 support
+
 ## 7.0.0 (2025-11-21)
 
 * switch to UV for development
