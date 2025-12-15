@@ -848,6 +848,6 @@ def cog_info(
         Profile=profile,
         GEO=geo,
         Tags=tags,
-        Band_Metadata=band_metadata,
+        Band_Metadata=band_metadata,  # type: ignore [call-arg]
         IFD=ifds,
     )
