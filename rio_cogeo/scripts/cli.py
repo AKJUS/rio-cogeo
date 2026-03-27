@@ -461,7 +461,7 @@ def info(input, to_json, config):  # noqa: C901
         click.echo(
             f"""
 {click.style('IFD', bold=True)}
-    {click.style('Id', underline=True, bold=True):<20}{click.style('Size', underline=True, bold=True):<27}{click.style('BlockSize', underline=True, bold=True):<26}{click.style('Decimation', underline=True, bold=True):<33}"""
+    {click.style('Id', underline=True, bold=True):<20}{click.style('Size', underline=True, bold=True):<27}{click.style('BlockSize', underline=True, bold=True):<26}{click.style('Decimation', underline=True, bold=True)}"""
         )
 
         for ifd in metadata.IFD:
