@@ -269,10 +269,12 @@ def test_cog_translate_valiEnv(runner):
     """Should work as expected (create cogeo file)."""
     with runner.isolated_filesystem():
         config = {"GDAL_TIFF_INTERNAL_MASK": False}
+        profile = jpeg_profile.copy()
+        profile.update({"blockxsize": 512, "blockysize": 512})
         cog_translate(
             raster_path_rgba,
             "cogeo_env.tif",
-            jpeg_profile,
+            profile,
             indexes=[1, 2, 3],
             add_mask=True,
             config=config,
