@@ -1,5 +1,10 @@
 # Release Notes
 
+## 7.0.2 (2026-03-27)
+
+* fix: add data_offsets initialization in cog_validate function (author @benboothby, https://github.com/cogeotiff/rio-cogeo/pull/318)
+* fix: remove trailing whitespace in Info CLI
+
 ## 7.0.1 (2025-12-15)
 
 * add python 3.14 support
