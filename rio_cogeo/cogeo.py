@@ -614,6 +614,9 @@ def cog_validate(  # noqa: C901
             yblocks = (src.height + block_size[1] - 1) // block_size[1]
             xblocks = (src.width + block_size[0] - 1) // block_size[0]
 
+            data_offsets = []
+            details["data_offsets"] = {}
+
             # Find the first block with a valid block_offset
             for y in range(yblocks):
                 for x in range(xblocks):
